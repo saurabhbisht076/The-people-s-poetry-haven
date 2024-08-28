@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent default scrolling */
+}
+
+.landing-container {
+  height: 100vh; /* Full height for the container */
+  overflow: auto; /* Enable scrolling in the container */
+  position: relative; /* Position relative for scrolling */
+  background-color: #ffffff; /* Light background color */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #008080; /* Deep teal */
+  color: white; /* White text for navbar */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 66%;
+  border: 2px solid #008080; /* Border color matching navbar */
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #FF6F61; /* Coral */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #FF4F4F; /* Darker coral on hover */
+}
+
+.card-container {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Add some padding */
+}
+
+.poet-card {
+  background: #f0f0f0; /* Light card background for contrast */
+  color: #333; /* Dark text for card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  overflow: hidden; /* Prevent overflow */
+  transition: transform 0.3s; /* Smooth scale on hover */
+}
+
+.poet-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.poet-logo {
+  display: block;
+  margin: 0 auto; /* Center the logo */
+  width: 80%; /* Adjust width as needed */
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it’s above other elements */
+}
+
+.popup .close {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+}
+
+/* Subscribe Button Styling */
+.subscribe-button-container {
+  position: sticky; /* Stick to the bottom */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it’s above other elements */
+}
+
+.subscribe-btn {
+  background-color: #FFD700; /* Gold color */
+  color: #222; /* Dark text for contrast */
+  padding: 15px 30px; /* Padding for a premium look */
+  border: none;
+  border-radius: 25px; /* Rounded edges for a button */
+  font-size: 18px; /* Larger font size */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.subscribe-btn:hover {
+  background-color: #FFC107; /* Darker gold on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
